@@ -6,14 +6,17 @@
     <a-scene background="color: red" renderer="colorManagement: true">
         <a-assets>
           <a-asset-item id="tree" response-type="arraybuffer" src="midmid2.glb"></a-asset-item>
-          <img id="my-image" src="y.png">
+          <img id="my-image" src="cherry.png">
 
         </a-assets>
         <a-entity light="type: directional; color: #EEE; intensity: 0.5" position="-1 1 0"></a-entity>
         <a-entity light="type: directional; color: #EEE; intensity: 0.5" position="1 -1 0"></a-entity>
 
         <a-entity gltf-model="#tree"  animation-mixer="loop:infinite"></a-entity>
-        <a-entity text="value: Thor, Emilio, and Cherry present: ; color: red;" position="2.059 5.5 0" scale="10 10 10"></a-entity>
+        <a-image src="#my-image" position="0.597 5.245 -9.253" scale="20 10 1"></a-image>
+
+        <a-entity text="value: Thor, Emilio, and Cherry present: ; color: red;" position="2.059 7 0" scale="10 10 10"></a-entity>
+        <a-entity text="value: Hearts ; color: red;" position="4.3 5.5 0" scale="10 10 10"></a-entity>
 
 
 
